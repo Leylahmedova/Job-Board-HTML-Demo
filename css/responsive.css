@@ -99,9 +99,6 @@
   .hero_btn_group {
     flex-direction: column;
   }
-  .img_group {
-    margin: 24px 0 8px;
-  }
   .hero_btn_group > div:nth-of-type(3) {
     margin-left: 0;
   }

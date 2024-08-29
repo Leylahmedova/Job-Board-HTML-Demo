@@ -15,12 +15,12 @@ ul {
   list-style: none;
 }
 a {
+  color: inherit;
   text-decoration: none;
 }
 .container {
-  width: 100%;
-  max-width: 1144px;
-  padding: 0 24px;
+  width: 1104px;
+  max-width: 95%;
   margin: 0 auto;
 }
 /* navbar */
@@ -32,10 +32,10 @@ a {
 }
 .nav_btn {
   display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.signin_btn {
-  padding: 8px 20px;
-}
+
 .signin_btn a {
   color: var(--main_blue);
   font-weight: 500;
@@ -65,11 +65,20 @@ a {
   --tw-gradient-to: rgb(224 231 255 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  /* background-image: url("https://preview.cruip.com/job-board/images/hero-illustration.svg"); */
+background-position: center;
+background-repeat:repeat-x;
+
+}
+.hero-img{
+    background-image: url("https://preview.cruip.com/job-board/images/hero-illustration.svg");
+
 }
 .hero_illustrators {
-  padding: 144px 0 60px;
-  margin-top: -80px;
-  background-image: url("https://preview.cruip.com/job-board/images/hero-illustration.svg");
+  /* padding: 144px 0 60px;
+  margin-top: -80px; */
+  padding-bottom: 75px;
+padding-top: 40px;
 }
 .hero_content {
   max-width: 668px;
@@ -93,9 +102,9 @@ a {
 .hero_btn_group {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 .img_group {
-  margin-left: 20px;
   display: flex;
 }
 .img_group div {
@@ -110,9 +119,8 @@ a {
   border: 2px solid #eef2ff;
 }
 .hero_btn_group > div:nth-of-type(3) {
-  margin-left: 12px;
   display: flex;
-  align-items: center;
+  align-items: center; 
 }
 .hero_btn_group > div:nth-of-type(3) p {
   color: var(--dark_gray);
